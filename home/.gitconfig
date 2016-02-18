@@ -1,38 +1,38 @@
 [user]
-	name = Alex Palcuie
-	email = alex.palcuie@hootsuite.com
+	name = Scott Mathson
+	email = smathson@gmail.com
 [core]
-    editor = vim
+	editor = vim
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
 [web]
-    browser = google-chrome
+	browser = google-chrome
 [merge]
-    tool = vimdiff
+	tool = vimdiff
 [color]
-    ui = auto
-    interactive = auto
+	ui = auto
+	interactive = auto
 [credential]
 	helper = osxkeychain
 [push]
 	default = current
 [alias]
-    co = checkout
-    cm = commit
-    st = status -sb
-    undo = reset --hard HEAD
-    amend = commit --amend -a
-    graph = log --graph
-    ignore = update-index --assume-unchanged
-    unignore = update-index --no-assume-unchanged
-    ignored = !git ls-files -v | grep "^[[:lower:]]"
-    sweep = !git fsck && git gc && git remote update --prune && git stash clear
-    update = !git checkout master && git checkout - && git merge master
+	co = checkout
+	cm = commit
+	st = status -sb
+	undo = reset --hard HEAD
+	amend = commit --amend -a
+	graph = log --graph
+	ignore = update-index --assume-unchanged
+	unignore = update-index --no-assume-unchanged
+	ignored = !git ls-files -v | grep "^[[:lower:]]"
+	sweep = !git fsck && git gc && git remote update --prune && git stash clear
+	update = !git checkout master && git checkout - && git merge master
 [log]
-    abbrevCommit = true
-    decorate = true
+	abbrevCommit = true
+	decorate = true
 [format]
-    pretty = %C(yellow)%h%C(white)%d%Creset %s %C(cyan)(%cr) %C(bold blue)<%an>%Creset
+	pretty = %C(yellow)%h%C(white)%d%Creset %s %C(cyan)(%cr) %C(bold blue)<%an>%Creset
 [filter "media"]
 	required = true
 	clean = git media clean %f
@@ -44,11 +44,3 @@
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
-[filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
-	required = true
-[filter "lfs"]
-	clean = git lfs clean %f
-	smudge = git lfs smudge %f
-	required = true

@@ -12,10 +12,6 @@ alias fig='find . | grep'
 alias reload="source ~/.zshrc"
 alias netest="ping 8.8.8.8"
 alias simple="python -m SimpleHTTPServer"
-alias slytherin='mosh slytherin -- tmux attach -d || tmux new'
-beammeupscotty() {
-    /Users/alex/Projects/sshuttle/src/sshuttle -r $1 0.0.0.0/0 -vv
-}
 alias -g lastm='*(om[1])'
 
 # Suffix aliases
@@ -27,15 +23,11 @@ alias zshrc="vim ~/.zshrc"
 alias vimrc="vim ~/.vimrc"
 alias vimlast="vim -c \"normal '0\""
 alias syslog="vim /var/log/syslog"
-alias bashar="open ~/Dropbox/bashar.pdf"
-alias devdocs="open http://devdocs.io"
 
 # Shorthands
 alias e="exit"
-alias go='gnome-open'
 alias h='history -fd -100'
 alias hgrep='history -fd 0 | grep'
-alias sr='ssh -l root'
 
 # cd & ls
 alias lc="cl"
@@ -66,9 +58,6 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 export PATH=/usr/local/bin:$PATH # Brew path
 export PATH=/usr/local/sbin:$PATH # Brew second path
-export PATH=$PATH:$HOME/dotfiles/scripts
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-export PYTHONSTARTUP="$HOME/.pythonrc"
 export TERM='xterm-256color'
 
 # Remove annoying messages
@@ -77,21 +66,6 @@ unsetopt correctall
 # FASD for faster switching between directories
 eval "$(fasd --init auto)"
 alias v='f -e vim'
-
-# alt-left and alt-right for switching words in terminal
-# taken from https://github.com/solnic/dotfiles/blob/master/home/zsh/key-bindings.zsh
-bindkey -e
-
-bindkey '^H' delete-word # iterm
-bindkey '^[[3~' delete-char # tmux
-
-bindkey '^[[1;9D' backward-word # iterm
-bindkey '^[^[[D' backward-word # tmux os x
-bindkey '^[[1;3D' backward-word # tmux ubuntu
-
-bindkey '^[[1;9C' forward-word # iterm
-bindkey '^[^[[C' forward-word # tmux os x
-bindkey '^[[1;3C' forward-word # tmux ubuntu
 
 # History configurations
 HISTSIZE=10000
@@ -104,9 +78,6 @@ setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share 
 setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
 setopt HIST_REDUCE_BLANKS
 setopt interactivecomments # allow # in a comment
-
-# Source awscli completion
-[ -f /usr/local/share/zsh/site-functions/_aws ] && source /usr/local/share/zsh/site-functions/_aws
 
 # Source configuration for local machine if it exists
 [ -f ~/.zshrclocal ] && source ~/.zshrclocal
