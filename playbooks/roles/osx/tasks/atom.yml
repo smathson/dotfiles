@@ -1,0 +1,9 @@
+---
+- name: Symlink Atom config
+  file: src=~/dotfiles/configs/atom
+        dest=~/.atom
+        force=yes
+        state=link
+
+- name: Install starred packages
+  command: apm star --installed

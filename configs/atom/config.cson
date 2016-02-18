@@ -1,0 +1,39 @@
+"*":
+  "atom-beautify":
+    _analyticsUserId: "548b96f1-1c7c-4ac4-a6c1-56fb815c37ee"
+  "autocomplete-plus": {}
+  core:
+    themes: [
+      "atom-dark-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  editor:
+    fontFamily: "droid sans mono"
+    fontSize: 12
+    invisibles: {}
+    preferredLineLength: 120
+    showInvisibles: true
+  "exception-reporting":
+    userId: "1e36f495-de55-09cf-0e1d-0129b980b551"
+  linter:
+    lintOnFly: false
+    showErrorPanel: false
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+    globalNodePath: "/usr/local"
+  "linter-jscs":
+    onlyConfig: true
+  "linter-jshint": {}
+  minimap:
+    absoluteMode: true
+  tabs: {}
+  "terminal-status": {}
+  "tree-view":
+    showOnRightSide: true
+  "vim-mode":
+    useClipboardAsDefaultRegister: true
+  welcome:
+    showOnStartup: false
+".angular.html.text":
+  editor:
+    preferredLineLength: 120
