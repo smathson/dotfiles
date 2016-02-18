@@ -88,14 +88,6 @@ let NERDTreeShowHidden=1
 " ACK plugin for searching in files
 Bundle 'mileszs/ack.vim'
 
-" Awesome statusline with custom zenburn colorscheme
-Bundle 'smathson/vim-powerline'
-let g:Powerline_cache_enabled = 0
-let g:Powerline_symbols = 'compatible'
-let g:Powerline_stl_path_style = 'relative'
-let g:Powerline_colorscheme = 'zenburn'
-set nosmd   " Don't show mode in status line
-
 " Matchit for file recognition
 runtime macros/matchit.vim
 filetype plugin on
@@ -112,7 +104,9 @@ vnoremap <Space> zf
 " ==================================================
 "   Display settings
 " ==================================================
-colorscheme Tomorrow-Night-Eighties
+Plugin 'chriskempson/base16-vim'
+colorscheme base16-default
+set background=dark
 
 " General
 syntax enable
