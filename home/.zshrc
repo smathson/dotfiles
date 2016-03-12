@@ -81,3 +81,7 @@ setopt interactivecomments # allow # in a comment
 
 # Source configuration for local machine if it exists
 [ -f ~/.zshrclocal ] && source ~/.zshrclocal
+
+# NVM
+export NVM_DIR=~/.nvm
+. $(brew --prefix nvm)/nvm.sh
