@@ -17,13 +17,13 @@
     - openssl
     - coreutils
     - findutils
-    - brew-cask
 
 - name: Install Homebrew Cask apps
   homebrew_cask: name={{ item }} state=present
   with_items:
     - iterm2
     - atom
+    - github-desktop
 
 - name: Cleanup Brew packages
   command: brew cleanup
